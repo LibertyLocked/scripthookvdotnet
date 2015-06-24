@@ -70,6 +70,11 @@ namespace GTA
 	{
 		Native::Function::Call(Native::Hash::SET_WEATHER_TYPE_NOW, sWeatherNames[static_cast<int>(value)]);
 	}
+	void World::CanRemoveBlipsCreatedByAnyScript::set(bool flag)
+	{
+		Native::Function::Call(Native::Hash::SET_THIS_SCRIPT_CAN_REMOVE_BLIPS_CREATED_BY_ANY_SCRIPT, flag);
+	}
+
 
 	array<Blip ^> ^World::GetActiveBlips()
 	{

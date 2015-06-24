@@ -155,6 +155,10 @@ namespace GTA
 		{
 			void set(GTA::Weather value);
 		}
+		static property bool CanRemoveBlipsCreatedByAnyScript
+		{
+			void set(bool flag);
+		}
 
 		static array<Blip ^> ^GetActiveBlips();
 		static array<Ped ^> ^GetNearbyPeds(Ped ^ped, float radius);
